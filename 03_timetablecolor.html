@@ -1,0 +1,133 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly College Time Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            /* Center the table on page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Odd rows = Red */
+        tr:nth-child(odd) {
+            background-color: #ff9999;
+        }
+
+        /* Even rows = Green */
+        tr:nth-child(even) {
+            background-color: #99ff99;
+        }
+
+        /* Hover Effect */
+        tr:hover {
+            background-color: yellow;
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Weekly College Time Table</h2>
+
+<table>
+
+    <tr>
+        <th>Day</th>
+        <th>10:10 - 11:00</th>
+        <th>11:00 - 11:50</th>
+        <th>11:50 - 12:20</th>
+        <th>12:20 - 1:10</th>
+        <th>1:10 - 2:00</th>
+        <th>2:00 - 2:50</th>
+        <th>2:50 - 3:50</th>
+    </tr>
+
+    <tr>
+        <td>Monday</td>
+        <td>HTML (Class)</td>
+        <td>CSS (Class)</td>
+
+        <td rowspan="5">
+            <b>BREAK</b>
+        </td>
+
+        <td>Java (Class)</td>
+        <td colspan="2">Web Development Lab</td>
+        <td>Python (Class)</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>DBMS (Class)</td>
+        <td>JavaScript (Class)</td>
+        <td>React JS (Class)</td>
+        <td colspan="2">Programming Lab</td>
+        <td>Maths (Class)</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>C Language (Class)</td>
+        <td>Python (Class)</td>
+        <td>HTML (Class)</td>
+        <td colspan="2">DBMS Lab</td>
+        <td>Communication Skills</td>
+    </tr>
+
+    <tr>
+        <td>Thursday</td>
+        <td>Java (Class)</td>
+        <td>React JS (Class)</td>
+        <td>JavaScript (Class)</td>
+        <td colspan="2">Web Design Lab</td>
+        <td>DBMS (Class)</td>
+    </tr>
+
+    <tr>
+        <td>Friday</td>
+        <td>Maths (Class)</td>
+        <td>C Language (Class)</td>
+        <td>Python (Class)</td>
+        <td colspan="2">Project Lab</td>
+        <td>Sports</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+```
